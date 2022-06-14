@@ -20,7 +20,7 @@ let user: [number, string] = [69, '69'];
 
 //enums
 
-enum Size {
+const enum Size {
   Small = 1,
   Medium,
   Large,
@@ -28,3 +28,10 @@ enum Size {
 
 let mySize: Size = Size.Medium;
 console.log(mySize);
+
+// Functions
+
+function calculateTax(income: number) {
+  if (income < 50_000) return income * 0.2;
+  return income * 1.3;
+}
