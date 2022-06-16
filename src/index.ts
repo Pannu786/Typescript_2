@@ -39,3 +39,31 @@ function calculateTax(income: number, taxYear = 2022): number {
 calculateTax(1000);
 
 // object
+
+let employee: {
+  readonly id: number;
+  name: string;
+  retire: (date: Date) => void;
+} = {
+  id: 1,
+  name: '',
+  retire: (date: Date) => {
+    console.log(date);
+  },
+};
+
+// Type Aliases
+
+type Employee = {
+  readonly id: number;
+  name: string;
+  retire: (date: Date) => void;
+};
+
+let employee1: Employee = {
+  id: 1,
+  name: '',
+  retire: (date: Date) => {
+    console.log(date);
+  },
+};
