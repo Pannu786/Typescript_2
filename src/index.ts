@@ -67,3 +67,48 @@ let employee1: Employee = {
     console.log(date);
   },
 };
+
+// Union Types
+
+const kgToLbs = (weight: number | string): number => {
+  if (typeof weight === 'number') return weight * 2.2046226218;
+  return parseInt(weight) * 2.2046226218;
+};
+
+kgToLbs('100');
+kgToLbs(100);
+
+// Intersection Types
+
+type Draggable = {
+  drag: () => void;
+};
+
+type Resizable = {
+  resize: () => void;
+};
+
+type UIWidget = Draggable & Resizable;
+
+let textBox: UIWidget = {
+  drag: () => {},
+
+  resize: () => {},
+};
+
+//Literal Types
+type Quantity = 50 | 99; // using union types here to represent 50 or 99(which is a Literal Type)
+let quantity: Quantity = 99;
+
+type Metric = 'kg' | 'g' | 'mg';
+
+// Never Type(nullable)
+
+function processEvents()   {
+  while (true) {
+    // do something
+  }
+}
+
+processEvents();
+console.log('hey');
