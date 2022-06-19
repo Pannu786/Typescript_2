@@ -104,7 +104,7 @@ type Metric = 'kg' | 'g' | 'mg';
 
 // Never Type(nullable)
 
-function processEvents()   {
+function processEvents() {
   while (true) {
     // do something
   }
@@ -112,3 +112,16 @@ function processEvents()   {
 
 processEvents();
 console.log('hey');
+
+// Optional Chaining
+
+type Customer = {
+  birthday: Date;
+};
+
+const getCustomer = (id: number): Customer | null | undefined => {
+  return id === 0 ? null : { birthday: new Date() };
+};
+
+let customer = getCustomer(2);
+  console.log(customer?.birthday);

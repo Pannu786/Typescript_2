@@ -34,4 +34,15 @@ const kgToLbs = (weight) => {
 };
 kgToLbs('100');
 kgToLbs(100);
+let textBox = {
+    drag: () => { },
+    resize: () => { },
+};
+let quantity = 99;
+function processEvents() {
+    while (true) {
+    }
+}
+processEvents();
+console.log('hey');
 //# sourceMappingURL=index.js.map
