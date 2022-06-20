@@ -124,4 +124,12 @@ const getCustomer = (id: number): Customer | null | undefined => {
 };
 
 let customer = getCustomer(2);
-  console.log(customer?.birthday);
+console.log(customer?.birthday);
+
+// Nullish Coalescing Operator
+
+let speed: number | undefined = undefined;
+let ride = {
+  //falsy (undefined, null, '', 0, NaN, false)
+  speed: speed ?? 30, //If speed is not undefined or null use that "speed" value, otherwise use 30
+}; 
