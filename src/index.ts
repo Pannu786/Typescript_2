@@ -132,6 +132,14 @@ let speed: number | undefined = undefined;
 let ride = {
   //falsy (undefined, null, '', 0, NaN, false)
   speed: speed ?? 30, //If speed is not undefined or null use that "speed" value, otherwise use 30
-}; 
+};
 
-// Optional Chaining
+// Never Type
+
+('not used that much');
+
+//The Unknown Type
+
+('Instead of use any-type, use unknown type');
+
+// Type Assertions
