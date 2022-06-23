@@ -146,4 +146,6 @@ let ride = {
 
 let phone = <HTMLInputElement>document.getElementById('phone');
 
-phone.value;
+phone.value; 
+
+
