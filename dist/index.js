@@ -45,4 +45,5 @@ function processEvents() {
 }
 processEvents();
 console.log('hey');
-//# sourceMappingURL=index.js.map
+//sourceMappingURL=index.js.map
+

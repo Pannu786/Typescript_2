@@ -143,3 +143,7 @@ let ride = {
 ('Instead of use any-type, use unknown type');
 
 // Type Assertions
+
+let phone = <HTMLInputElement>document.getElementById('phone');
+
+phone.value;
