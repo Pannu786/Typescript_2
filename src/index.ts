@@ -148,4 +148,4 @@ let phone = <HTMLInputElement>document.getElementById('phone');
 
 phone.value; 
 
-
+//inter to OOP 
