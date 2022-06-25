@@ -45,5 +45,29 @@ function processEvents() {
 }
 processEvents();
 console.log('hey');
-//sourceMappingURL=index.js.map
-
+const getCustomer = (id) => {
+    return id === 0 ? null : { birthday: new Date() };
+};
+let customer = getCustomer(2);
+console.log(customer === null || customer === void 0 ? void 0 : customer.birthday);
+let speed = undefined;
+let ride = {
+    speed: speed !== null && speed !== void 0 ? speed : 30,
+};
+('not used that much');
+('Instead of use any-type, use unknown type');
+let phone = document.getElementById('phone');
+phone.value;
+class Account {
+    constructor(id, owner, balance) {
+        this.id = id;
+        this.owner = owner;
+        this.balance = balance;
+    }
+    deposit(amount) {
+        if (amount <= 0)
+            throw new Error('Invalid amount');
+        this.balance += amount;
+    }
+}
+//# sourceMappingURL=index.js.map
