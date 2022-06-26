@@ -168,3 +168,6 @@ class Account {
     this.balance += amount;
   }
 }
+
+
+// Creating a new Object
