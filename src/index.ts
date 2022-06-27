@@ -124,7 +124,6 @@ const getCustomer = (id: number): Customer | null | undefined => {
 };
 
 let customer = getCustomer(2);
-console.log(customer?.birthday);
 
 // Nullish Coalescing Operator
 
@@ -163,11 +162,13 @@ class Account {
     this.balance = balance;
   }
   deposit(amount: number): void {
-    if (amount <= 0)
-      throw new Error('Invalid amount');
+    if (amount <= 0) throw new Error('Invalid amount');
     this.balance += amount;
   }
 }
-
-
 // Creating a new Object
+
+let account = new Account(1, 'Pannus', 0);
+account.deposit(100);
+
+console.table(account);
