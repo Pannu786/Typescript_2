@@ -172,3 +172,6 @@ let account = new Account(1, 'Pannus', 0);
 account.deposit(100);
 
 console.table(account);
+
+// Read-only and Optional properties
+
