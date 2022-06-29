@@ -175,3 +175,9 @@ console.table(account);
 
 // Read-only and Optional properties
 
+[
+  'Just add "readonly" inside the object front of the key and just add ? for make it optional',
+];
+
+
+//
