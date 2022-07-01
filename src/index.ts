@@ -180,4 +180,4 @@ console.table(account);
 ];
 
 
-//Access control keywords 
+//Access control keywords, it has keys like 'private', 'public and protected
