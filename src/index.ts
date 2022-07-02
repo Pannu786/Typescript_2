@@ -179,5 +179,6 @@ console.table(account);
   'Just add "readonly" inside the object front of the key and just add ? for make it optional',
 ];
 
-
 //Access control keywords, it has keys like 'private', 'public and protected
+
+// Parameter Properties
