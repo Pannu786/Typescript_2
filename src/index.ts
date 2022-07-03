@@ -181,4 +181,6 @@ console.table(account);
 
 //Access control keywords, it has keys like 'private', 'public and protected
 
-// Parameter Properties
+// Parameter Properties, it makes code shorter and more readable as we no longer need to repeat the same constructor.
+
+
