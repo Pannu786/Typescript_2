@@ -183,4 +183,6 @@ console.table(account);
 
 // Parameter Properties, it makes code shorter and more readable as we no longer need to repeat the same constructor.
 
+//Getters and setters 
+
 
