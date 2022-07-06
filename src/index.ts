@@ -175,7 +175,7 @@ console.table(account);
 
 // Read-only and Optional properties
 
-[
+[ 
   'Just add "readonly" inside the object front of the key and just add ? for make it optional',
 ];
 
@@ -183,6 +183,6 @@ console.table(account);
 
 // Parameter Properties, it makes code shorter and more readable as we no longer need to repeat the same constructor.
 
-//Getters and setters 
+//Getters and setters understand by watching the video.
 
 
