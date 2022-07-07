@@ -185,4 +185,5 @@ console.table(account);
 
 //Getters and setters understand by watching the video.
 
+// Index Signatures
 
