@@ -185,5 +185,7 @@ console.table(account);
 
 //Getters and setters understand by watching the video.
 
-// Index Signatures
+// Index Signatures watched the video
+
+//Static Members
 
