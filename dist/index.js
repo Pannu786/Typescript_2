@@ -72,4 +72,22 @@ class Account {
 let account = new Account(1, 'Pannus', 0);
 account.deposit(100);
 console.table(account);
+[
+    'Just add "readonly" inside the object front of the key and just add ? for make it optional',
+];
+class Ride {
+    start() {
+        Ride.activeRiders++;
+    }
+    stop() {
+        Ride.activeRiders--;
+    }
+}
+Ride.activeRiders = 0;
+let ride1 = new Ride();
+ride1.start();
+let ride2 = new Ride();
+ride2.stop();
+console.log(Ride.activeRiders);
+console.log(Ride.activeRiders);
 //# sourceMappingURL=index.js.map

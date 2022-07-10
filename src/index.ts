@@ -175,7 +175,7 @@ console.table(account);
 
 // Read-only and Optional properties
 
-[ 
+[
   'Just add "readonly" inside the object front of the key and just add ? for make it optional',
 ];
 
@@ -185,8 +185,30 @@ console.table(account);
 
 //Getters and setters understand by watching the video.
 
-// Index Signatures watched the video
+//Index Signatures watched the video
 
 //Static Members
 
+class Ride {
+  private static _activeRiders: number = 0;
 
+  start() {
+    Ride._activeRiders++;
+  }
+  stop() {
+    Ride._activeRiders--;
+  }
+
+  static get activeRiders() {
+    return Ride._activeRiders;
+  }
+}
+
+let ride1 = new Ride();
+ride1.start();
+
+let ride2 = new Ride();
+ride2.stop();
+
+console.log(Ride.activeRiders);
+console.log(Ride.activeRiders);
