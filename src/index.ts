@@ -189,26 +189,66 @@ console.table(account);
 
 //Static Members
 
-class Ride {
-  private static _activeRiders: number = 0;
+// class Ride {
+//   private static _activeRiders: number = 0;
 
-  start() {
-    Ride._activeRiders++;
-  }
-  stop() {
-    Ride._activeRiders--;
-  }
+//   start() {
+//     Ride._activeRiders++;
+//   }
+//   stop() {
+//     Ride._activeRiders--;
+//   }
 
-  static get activeRiders() {
-    return Ride._activeRiders;
-  }
+//   static get activeRiders() {
+//     return Ride._activeRiders;
+//   }
+// }
+
+// let ride1 = new Ride();
+// ride1.start();
+
+// let ride2 = new Ride();
+// ride2.stop();
+
+// console.log(Ride.activeRiders);
+// console.log(Ride.activeRiders);
+
+// Inheritance, when you inheritance  something from another class or object.(properties or methods)
+
+//Method overriding, it is used to override the methods in the class and  the methods in the object properties.
+
+// Polymorphism is when you don't change the class
+
+// Private vs Protected Members, protected members are accessible through class properties as they are inheritance where as private methods are only accessible in their own class properties.
+
+// Abstract classes and methods ..
+
+// Interfaces
+
+// abstract class Calender {
+//   constructor(public name: string) {}
+
+//   abstract addEvent(): void;
+//   abstract removeEvent(): void;
+// }
+
+interface Calender {
+  name: string;
+  addEvent(): void;
+  removeEvent(): void;
 }
 
-let ride1 = new Ride();
-ride1.start();
+interface CloudCalendar extends Calender {
+  sync(): void;
+}
 
-let ride2 = new Ride();
-ride2.stop();
+class GoogleCalendar implements Calender {
+  constructor(public name: string) {}
 
-console.log(Ride.activeRiders);
-console.log(Ride.activeRiders);
+  addEvent(): void {
+    throw new Error('Method not implemented.');
+  }
+  removeEvent(): void {
+    throw new Error('Method not implemented.');
+  }
+}
