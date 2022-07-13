@@ -252,3 +252,5 @@ class GoogleCalendar implements Calender {
     throw new Error('Method not implemented.');
   }
 }
+
+// FOLDER 6, generic classes 
