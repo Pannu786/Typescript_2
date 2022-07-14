@@ -253,4 +253,13 @@ class GoogleCalendar implements Calender {
   }
 }
 
-// FOLDER 6, generic classes 
+// FOLDER 6, generic classes
+
+class KeyValuePair<TKey, TValue> {
+  constructor(public key: TKey, public value: TValue) {}
+}
+
+let pair = new KeyValuePair(69, '69');
+pair.key.toFixed
+
+
