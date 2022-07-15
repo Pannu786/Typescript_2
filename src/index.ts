@@ -260,6 +260,17 @@ class KeyValuePair<TKey, TValue> {
 }
 
 let pair = new KeyValuePair(69, '69');
-pair.key.toFixed
+pair.key.toFixed;
+
+// Generic Functions
+
+class ArrayUtils {
+  static wrapInArray = <T>(value: T) => {
+    return [value];
+  };
+}
+
+let num = ArrayUtils.wrapInArray(true);
 
 
+//
