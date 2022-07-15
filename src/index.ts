@@ -294,7 +294,13 @@ interface Product {
   title: string;
 }
 
-let result = fetch<User>('url')
-result.data
+let result = fetch<User>('url');
+result.data;
 
-// 
+// Generic Constraints
+
+const echo = <T extends number | string >(value: T): T => {
+  return value;
+};
+
+echo('100')
