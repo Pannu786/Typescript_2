@@ -338,3 +338,11 @@ class ProductStore extends Store<Product> {
     return [];
   }
 }
+
+// The keyof Operator
+
+
+
+//Type of Mapping
+
+
