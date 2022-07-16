@@ -341,8 +341,16 @@ class ProductStore extends Store<Product> {
 
 // The keyof Operator
 
-
-
 //Type of Mapping
 
+interface Pro {
+  name: string;
+  price: number;
+}
 
+type ReadOnlyPro = {
+  readonly 
+  [k in keyof Pro]: Pro[k];
+};
+
+ 
