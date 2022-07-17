@@ -353,4 +353,4 @@ type ReadOnlyPro = {
   [k in keyof Pro]: Pro[k];
 };
 
- 
+// Decorator
