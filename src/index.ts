@@ -349,8 +349,13 @@ interface Pro {
 }
 
 type ReadOnlyPro = {
-  readonly 
-  [k in keyof Pro]: Pro[k];
+  readonly [k in keyof Pro]: Pro[k];
 };
 
 // Decorator
+
+//Modules
+//Exporting and importing modules
+import { Circle } from './shapes';
+
+let circle = new Circle(1);
