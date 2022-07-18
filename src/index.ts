@@ -359,3 +359,12 @@ type ReadOnlyPro = {
 import { Circle } from './shapes';
 
 let circle = new Circle(1);
+
+
+
+
+// Ts with React js
+
+
+
+
